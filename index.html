@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <h1 style="color: rgb(101, 3, 101);">Guess the Number</h1>
+        <h3>Rules:</h3>
+            <li>Select a number from 1 to 100</li>
+            <li>Click on the check button</li>
+            <li>It will give you a hint to guess the number correctly</li>
+            <li>Repeat the same step until you find the number</li>
+            <input type="number" placeholder="Enter the number" id="n1" style="color: rgb(2, 2, 92);">
+        <h3 style="color: brown;" id="res">Wait for the Result!!!</h3>
+        <h3 style="color: blue;" id="tries">Number of tries: 0</h3>
+        <div id="btn">
+            <input type="submit" value="Check" onclick="findNumber()">
+            <input type="submit" value="Reset" onclick="window.location.reload()">
+        </div>
+    </div>
+    <script src="./design.js"></script>
+</body>
+</html>
